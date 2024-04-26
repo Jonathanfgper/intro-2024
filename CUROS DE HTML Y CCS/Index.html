@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppDegatos</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!-- Se inicia normalmente con H1 -->
+   <main>
+     <h2 id="Titulo-app-gatos">AppDegatos</h2>
+     <!-- agregar enlaces _blank a una pestaña nueva -->
+      <p>Haz clcik aqui para ver <a href="https://pixabay.com/es/photos/gato-mascota-lamiendo-animales-323262/"target="_blank"rel="noopener noreferrer">mas imagenes de gatos.</a></p>
+     <p>textos de gatos.</p>
+      <p>Mas textos de gatos</p>
+    <h3>Imagenes de gatos</h3>
+<!-- agregar enlaces internos -->
+     <hr>
+    <a href="#parrafo-1">parrafo 1</a>
+    <a href="#parrafo-2">parrafo 2</a>
+    <a href="#parrafo-3">parrfo 3</a>
+  <!-- Agregar imagenes -->   
+    
+  <img class="bordes-redonditos" src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg" alt="un lindo gato lamiendose la pata">
+    <hr>
+<!-- agregar enlace a imagenes -->
+    <a href="https://www.pinterest.com.mx/chic0_123/hombres-pelones/" target="_blank"><img src="IMAGENES/ninopelon.jpg" alt="Foto de un niño niño pelon"></a>
+<!-- para crear enlaces muertos solo se coloca # En el lado del enlace -->
+      <Hr></Hr>
+      <!-- utilizar Hr sirve para colocar una linea horizontal -->
+    <h3 id="parrafo-1">parrafo 1</h3>
+<hr>
+    <p>El encanto felino: Los gatos son seres fascinantes, con una elegancia natural que cautiva a quienes tienen el placer de compartir su vida con ellos. Su mirada enigmática y su andar silencioso despiertan curiosidad y admiración. Son compañeros leales que nos enseñan el valor del sosiego y la independencia.</p>
+    <
+    <h3 id="parrafo-2">parrafo 2</h3>
+
+    <p>El ronroneo reconfortante: El suave zumbido de un gato al ronronear es como una melodía tranquilizadora que llena el ambiente de paz y bienestar. Este misterioso mecanismo, que oscila entre el misterio y la ciencia, es la manifestación más clara del contento felino. Un gato que ronronea es un amigo fiel y un confidente silencioso.</p>
+    
+    <h3 id="parrafo-3">parrafo3</h3>
+    
+    <p>El cazador en reposo: Detrás de la aparente calma de un gato dormido yace un cazador formidable. Sus sentidos permanecen alerta incluso en los momentos de mayor placidez, listos para detectar el más mínimo movimiento que pueda revelar la presencia de una presa. Es en estos instantes de aparente inactividad donde se manifiesta su esencia felina más pura.</p>
+    <!-- crear una lista desordenada con puntos -->
+    
+    <h3>lista de gatos</h3>
+  <!-- para colocar el texto en cursiva se usa em y el texto -->
+  <hr>
+<div>
+    <p>cosas que los gatos <em>aman</em>:</p>
+    <ul class="lista-de-gatos">
+        <li>Menta gatuna</li>
+        <li>apuntadores lacer</li>
+        <li>niños pelones</li>
+    </ul>
+
+    <img class="fotos-de-gatos" src="https://estaticos-cdn.prensaiberica.es/clip/ec13fd86-fe9d-494d-8eb0-0adc433fda3c_16-9-discover-aspect-ratio_default_0.jpg" alt="gatos felices">
+<!-- para colocar el texto en negrita se usa strong y el texto -->
+    <p>cosas que los gatos <strong>odian</strong>:</p>
+ <!-- lista ordenada 1,2,3-->
+    <ol>
+        <li>tratamientos para pulgas</li>
+        <li>el agua</li>
+        <!-- para tachar un texto se utiliza S y el texto -->
+        <li> <s>otros gatos</s></li>
+        <!-- se utiliza div para hacer grupos de codigos -->
+</div> 
+    </ol>
+    <img class="fotos-de-gatos" src="https://www.petlife.mx/u/fotografias/m/2023/8/29/f960x540-5755_79830_5050.jpg" alt="gatos enojados">
+    
+<!-- crear un formulario -->
+    <form action="enviar-respuesta">
+        
+        <!-- para dar una indicacion se utiliza placeholder y el texto y required para que sea obligatorio -->
+        <input type="text" placeholder="Url de la foto de tu gato" required>
+        <button type="submit">Enviar</button>
+<!-- agregar casrillas de verificacion -->
+        <label for="carinoso"></label><input id="carinoso" type="checkbox" value="carinoso" name="peronalidad">cariñoso</label>
+        <label for="peresoso"></label><input id="peresoso" type="checkbox" value="peresoso" name="personalidad">peresoso</label>
+        <label for="enojon"></label><input id="enojon" type="checkbox" value="enojon" name="personalidad">enojon</label>
+        
+<!-- boton para marcarlo y label para seleccion sobre las letras -->
+        <br>
+        <label for="Interior"></label><input id="Interior" type="radio" value="Interior" name="interior-exterior">Interior</label>
+        <br>
+        <label for="Exterior"></label><input id="Exterior" type="radio" value="Exterior" name="interior-exterior">Exterior</label>
+        
+
+
+    </form>
+
+
+
+    <!-- agregar pie de pagina texto y pagina -->
+     <footer><p><small>sin derechos de autor - <a href="https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/#learn-html-by-building-a-cat-photo-app" target="_blank">freecodecamp.org</a></small></p>
+    </footer>
+   </main>
+ </body>
+</html>
