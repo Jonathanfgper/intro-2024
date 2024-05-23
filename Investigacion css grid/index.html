@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina web</title>
+</head>
+<body>
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+          gap: 10px;
+          background-color: #2196F3;
+          padding: 8px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size:auto;
+        }
+        </style>
+        </head>
+        <body>
+            
+            <h1>Investigacion CCS</h1>
+            
+        <p>En CSS Grid, defines un contenedor como un grid container y luego defines las áreas dentro de ese contenedor. Puedes establecer el tamaño y la disposición de las filas y columnas, y luego colocar elementos HTML dentro de estas áreas definidas. CSS Grid proporciona un control preciso sobre la disposición de los elementos en la página.</p>
+        
+        <div class="grid-container">
+          <div class="item1">Bienvenidos a mi pagina</div>
+          <div class="item2">Menu 
+            <ul> 
+            <li><a href="#">opcion 1</li></a>
+            <li><a href="#">opcion 2</li></a>
+            <li><a href="#">opcion 3</li></a> 
+            <li><a href="#">opcion 4</li></a> 
+        </div>
+          <div class="item3"> <b>Cuerpo de pagina</b>
+            <p>En CSS Grid, defines un contenedor como un grid container y luego defines las áreas dentro de ese contenedor. Puedes establecer el tamaño y la disposición de las filas y columnas, y luego colocar elementos HTML dentro de estas áreas definidas. CSS Grid proporciona un control preciso sobre la disposición de los elementos en la página</p>
+        </div>  
+          <div class="item4">Barra derecha
+            <p>esta barrra por lo general se usa para colocar anuncios</p>
+          </div>
+          <div class="item5">pie de pagina</div>
+        </div>
+</body>
+</html>

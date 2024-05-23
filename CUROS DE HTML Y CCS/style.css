@@ -1,0 +1,90 @@
+h2 {
+   color: tan;
+     }
+h3 {
+   color: darkgoldenrod;
+}
+p {
+   color: darksalmon;
+}
+form {
+  color: lightsalmon;
+}
+/* para que todo el texto sea del color seleccionado  */
+* {
+  color: brown; para que todo el texto sea del color seleccionado
+}
+/* el punto es asignarles un color a una clase */
+.Lista-de-gatos {
+  color: white
+}
+/* cambiar el tamaño de la letra */
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 15;
+}
+/* cambiar el tipo de letra a todas las letras */
+h2,
+h3,
+ul,
+ol,
+p, {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* cambiar el ancho de todas las imagenes */
+img {
+  width: 200px;
+}
+/* cambiar el tamaño de las imagenes por clase */
+.fotos-de-gatos {
+  width: 200px;
+}
+/* agregar bordes con color y estilo */
+.fotos-de-gatos {
+  border-width: 5px;
+  border-color: brown;
+  border-style: outset;
+}
+/* crear bordes redondeados imagenes */
+.bordes-redonditos{
+  border-radius: 50%;
+}
+/* modificar una ID */
+#Titulo-app-gatos {
+  color: skyblue;
+  font-size: 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#imagen-gatos {
+  border-radius: 50%;
+  border-width: 5px;
+  border-color: beige;
+}
+/* crear un espacio interior */
+img {
+  padding: 15px;
+}
+[type="radio"] {
+  margin: 20px;
+}
+a[href="https://pixabay.com/es/photos/gato-mascota-lamiendo-animales-323262/"] {
+  color: burlywood;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
