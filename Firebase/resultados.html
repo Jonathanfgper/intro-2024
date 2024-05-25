@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <h1>Resultados en tiempo real</h1>
+        <img class="logo" src="https://umgef.wordpress.com/wp-content/uploads/2017/10/5619171_orig.png" alt="">
+    </div>
+    <div class="row">
+        <h2 id ="nombre-votacion" style="color: chocolate;">Nombre de votacion</h2>;
+    </div>
+    <div class="in-cols" >
+        <div class="vote-col" id="div-opcion1" >
+            <h2 style="text-align: center ;" id="h2-opcion1" >Opcion 1</h2>;
+            <h4 style="text-align: center;" id="total-1"></h4>
+            <div class="row" id="div-votos-opcion1"></div>
+            <div class="row">
+                <button id="btn-votar-opcion1" class="button">Votar</button>
+            </div>
+
+            <div>
+                <div class="vote-col" id="div-opcion2" style="background-color: gold;">
+                    <h2 style="text-align: center;" id="h2-opcion2">Opcion 2</h2>
+                    <h4 style="text-align: center;" id="total-2"></h4>
+                    <div class="row" id="div-votos-opcion2"</div>
+                    <div class="row">
+                        <button id="btn-votar-opcion2" class="button">Votar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <dialog id="dialogIniciarSesion" class="dialog">
+                <div class="dialog-content">
+                    <small>Debe iniciar sesión para interactuar con la aplicación</small>
+                    <button id="btnIniciarSesion" class="button light-blue">Iniciar Sesión con Google</button>
+                </div>
+        
+            </dialog>
+
+        </div>
+
+    </div>
+
+    <script src="resultados.js"></script>
+    <script src="Firebase-connect.js" type="module"></script>
+</body>
+</html>
