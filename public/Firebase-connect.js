@@ -5,20 +5,21 @@ import { getDatabase, ref, child, push, update, set, onValue }
 
 import { getAuth, GoogleAuthProvider, signInWithPopup }
     from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js'
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBykiqUApt5vBeBurMn0a-Fx-N0RGqc4-8",
-    authDomain: "intro-2024-9bfa3.firebaseapp.com",
-    projectId: "intro-2024-9bfa3",
-    storageBucket: "intro-2024-9bfa3.appspot.com",
-    messagingSenderId: "162407710084",
-    appId: "1:162407710084:web:1f7199475248c2e74f31d1"
+    apiKey: "AIzaSyAVd1m1B32Z0BO9YbtKIZxXq6zMqA7TNIU",
+    authDomain: "proyecto-votacion-15dd4.firebaseapp.com",
+    projectId: "proyecto-votacion-15dd4",
+    storageBucket: "proyecto-votacion-15dd4.appspot.com",
+    messagingSenderId: "1032651371097",
+    appId: "1:1032651371097:web:8ce9214069404753ce7748"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-    async function iniciarSesionGoogle() {
+async function iniciarSesionGoogle() {
     //Obtenemos la logica de autenticacion
     var auth = getAuth();
     //Creamos el proveedor en este caso es Google.
@@ -28,19 +29,19 @@ const app = initializeApp(firebaseConfig);
     console.log(response);
     const database = getDatabase();
     set(ref(database, 'usuarios/' + response.user.uid), {
-        email: response.user.email,
-        miniatura: response.user.photoURL
+    email: response.user.email,
+    miniatura: response.user.photoURL
     });
     return response.user;
 }
 
 function GuardarVotacion(datos) {
     const database = getDatabase();
-    const idVotacion = 'votacion-' + Math.floor(Math.random() * 1000000);
+    const idVotacion = Math.floor(Math.random() * 1000000);
     set(ref(database, 'votaciones/' + idVotacion), {
-        nombre: datos.nombre,
-        opcion1: datos.opcion1,
-        opcion2: datos.opcion2
+    nombre: datos.nombre,
+    opcion1: datos.opcion1,
+    opcion2: datos.opcion2
     });
     return idVotacion;
 }
@@ -48,25 +49,25 @@ function GuardarVotacion(datos) {
 function recuperarVotaciones(callback) {
     const database = getDatabase();
     return onValue(ref(database, '/votaciones/'), (snapshot) => {
-        callback(snapshot.val())
+    callback(snapshot.val())
     }, {
-        onlyOnce: true
+    onlyOnce: true
     });
 }
 
 function verificarVoto(idVotacion, uid, callback){
     const database = getDatabase();
     return onValue(ref(database, '/votos/' + idVotacion + "/" + uid), (snapshot) => {
-        callback(snapshot.val());
+    callback(snapshot.val());
     }, {
-        onlyOnce: true
+    onlyOnce: true
     });
 }
 
 function recuperarVotos(idVotacion, callback){
     const database = getDatabase();
     return onValue(ref(database, '/votos/' + idVotacion), (snapshot) => {
-        callback(snapshot.val());
+    callback(snapshot.val());
     });
 }
 
@@ -80,12 +81,11 @@ async function votar(idVotacion, opcion, idUsuario, detalles){
 function recuperarVotacion(idVotacion, callback) {
     const database = getDatabase();
     return onValue(ref(database, '/votaciones/' + idVotacion), (snapshot) => {
-        callback(snapshot.val())
+    callback(snapshot.val())
     }, {
-        onlyOnce: true
+    onlyOnce: true
     });
 }
-
 
 
 export {
@@ -97,4 +97,5 @@ export {
     votar,
     recuperarVotacion
 }
+
 

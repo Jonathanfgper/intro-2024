@@ -10,7 +10,7 @@
 /* Estilo del cuerpo (body) del documento */
 body {
     /* Fondo con un degradado lineal de colores */
-    background: linear-gradient(#9b58d1, #ae91c5);
+    background: linear-gradient(#C39898 , #987070);
     /* Altura de la ventana completa */
     height: 100vh;
     /* Flexbox para centrar contenido */
@@ -22,11 +22,11 @@ body {
 /* Estilo de la sección principal del contenido */
 section {
     /* Ancho fijo de la sección */
-    width: 500px;
+    width: 900px;
     /* Fondo blanco */
-    background: white;
+    background: #F1E5D1;
     /* Borde sólido de 7px con color específico */
-    border: 7px solid #9b58d1;
+    border: 7px solid #DBB5B5;
     /* Espaciado interno de 7px */
     padding: 7px;
 }
@@ -34,7 +34,7 @@ section {
 /* Estilo de los encabezados de nivel 2 (h2) */
 h2 {
     /* Línea inferior de borde */
-    border-bottom: 1px solid #9b58d1;
+    border-bottom: 1px solid #b1b0ac;
     /* Texto centrado */
     text-align: center;
     /* Espaciado inferior de 5px */
@@ -56,7 +56,7 @@ h2 {
     height: 50px;
     width: 50px;
     /* Borde sólido de 2px con color específico */
-    border: 2px solid #9b58d1;
+    border: 2px solid #DBB5B5;
     /* Texto centrado */
     text-align: center;
     /* Margen de 4px entre letras */
@@ -70,7 +70,7 @@ h2 {
 /* Estilo para letras correctamente adivinadas */
 .pintar {
     /* Fondo verde azulado */
-    background-color: #02bfa4;
+    background-color: green;
 }
 
 /* Estilo para letras incorrectamente adivinadas */
@@ -108,7 +108,7 @@ button {
     /* Margen automático para centrar */
     margin: 10px auto;
     /* Fondo verde azulado */
-    background-color: #02bfa4;
+    background-color: grey;
     /* Texto blanco */
     color: white;
     /* Sin borde */

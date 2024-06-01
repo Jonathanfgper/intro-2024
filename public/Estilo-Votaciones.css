@@ -112,6 +112,7 @@ body {
     padding-bottom: 20px;
 }
 
-.add-space{
-    margin: 10px;
+.profile-picture {
+    max-width: 80px;
+    border-radius: 50px;
 }

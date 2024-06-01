@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votaciones UMG</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Estilo-Votaciones.css">
 </head>
 <body>
+
     <div class="row">
         <h1>Votaciones UMG</h1>
         <img class="logo" src="https://umgef.wordpress.com/wp-content/uploads/2017/10/5619171_orig.png" alt="">
@@ -36,40 +37,39 @@
                     <label for="txtOpcion2">Opción 2</label>
                     <input id="txtOpcion2" class="form-control">
                 </div>
-                    <button type="button" id="btnCrearVotacion" class="button light-blue">Crear</button>
+                    <button id="btnCrearVotacion" class="button light-blue">Crear</button>
             </form>
-
     </dialog>
     <dialog id="dialogIniciarSesion" class="dialog">
+
+
         <div class="dialog-content">
             <small>Debe iniciar sesión para interactuar con la aplicación</small>
-            <button id="btnIniciarSesion" class="button light-blue">Iniciar Sesión con Google</button>
+            <button class="button light-blue" id="btnIniciarSesion">Iniciar Sesión con Google</button>
         </div>
-
     </dialog>
-
     <dialog id="dialogVotaciones" class="dialog">
         <div class="modal-title">
-            <label>votaciones activas</label>
-        </div>   
-
+            <label>Votaciones activas</label>
+        </div>
         <div class="dialog-content">
             <table class="table" border="1" id="table-votaciones">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>Id</th>
                         <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th>Opcion 1</th>
-                        <th>Opcion 2</th>
+                        <th>Opción 1</th>
+                        <th>Opción 2</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
+                <tbody>
+                </tbody>
             </table>
-
         </div>
     </dialog>
-    <script src="script.js" type="module"></script>
     <script src="Firebase-connect.js" type="module"></script>
+    <script src="votaciones.js" type="module"></script>
+    
 </body>
 </html>
