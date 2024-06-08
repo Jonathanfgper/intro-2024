@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, button {
+    margin: 10px;
+}
+
+p {
+    font-weight: bold;
+}
+
+
