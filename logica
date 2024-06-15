@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Number Validation</title>
+</head>
+<body>
+    <label for="input1">Input 1:</label>
+    <input type="number" id="input1" name="input1">
+    <br>
+    <label for="input2">Input 2:</label>
+    <input type="number" id="input2" name="input2">
+    <br>
+    <label for="input3">Input 3:</label>
+    <input type="number" id="input3" name="input3">
+    <br>
+    <button onclick="button1Function()">Botón 1</button>
+    <button onclick="button2Function()">Botón 2</button>
+    <p id="result"></p>
+
+    <script>
+        function button1Function() {
+            let input1 = parseFloat(document.getElementById('input1').value);
+            let input2 = parseFloat(document.getElementById('input2').value);
+            let input3 = parseFloat(document.getElementById('input3').value);
+            let result = '';
+
+            if (input1 < input3) {
+                let sum = input1 + input2 + input3;
+                result = `Suma: ${input1} + ${input2} + ${input3} = ${sum}`;
+            } else if (input2 === 0) {
+                let difference = Math.abs(input1 - input3);
+                result = `Resta: |${input1} - ${input3}| = ${difference}`;
+            } else if (input1 === input2) {
+                let product = input1 * input2 * input3;
+                result = `Multiplicación: ${input1} * ${input2} * ${input3} = ${product}`;
+            }
+
+            document.getElementById('result').innerText = result;
+        }
+
+        function button2Function() {
+            let input1 = parseFloat(document.getElementById('input1').value);
+            let input2 = parseFloat(document.getElementById('input2').value);
+            let input3 = parseFloat(document.getElementById('input3').value);
+            let sum = input1 + input2 + input3;
+            let result = '';
+
+            if (sum > 10) {
+                for (let i = 0; i < sum; i++) {
+                    result += `Multiplicación: ${input1} * ${input2} - ${input3} = ${(input1 * input2) - input3}\n`;
+                }
+            } else {
+                for (let i = 0; i < sum; i++) {
+                    result += `Suma: ${input1} + ${input2} + ${input3} = ${input1 + input2 + input3}\n`;
+                }
+            }
+
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>
